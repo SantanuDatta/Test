@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Title</title>
+        
+        <!-- Bootstrap CDN Link -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!-- Font Awesome CDN Lnk -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        
+        <!-- Main CSS File Linkup -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+    </head>
+    <body>
+       
+        <!-- Header Section Start -->
+        <header>
+            <div class="cover container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                           <!-- You logo here -->
+                            <a class="navbar-brand" href="#"><img src="img/Logo.png" class="img-fluid" alt="logo"></a>
+                            
+                            <!-- Responsive Button -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span><i class="fas fa-bars"></i></span>
+                            </button>
+                            <!-- Navigation Links -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Explore Styles</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Weddings</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Packages</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    	<a class="nav-link" href="#">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    	<a class="nav-link" href="#">Log In</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+					</div>
+				</div>
+			</div>
+    	</header>
+		<!-- Header Section End-->
+       
+		<!-- Banner Section Start -->
+		
+		<section class="banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<h1>Look Your Best</h1>
+						<h2>Top rated hairstylists and makeup artists <br> 
+							come directly to you.
+						</h2>
+					</div>
+					<div class="row">
+						<div class="col-lg-9">
+							<form action="https://appointment.beglammed.com/schedulenew/default.aspx" class="form" id="booking" type="POST" novalidate="novalidate">
+								<input type="hidden" name="type" value="P" id="type">
+								<div class="form-group">
+									<div class="input-group">
+										<div class="col-lg-3 tight">
+											<select name="location" id="location" class="form-control special" required="" aria-required="true">
+												<option selected="" disabled="">Select your city...</option>
+												<option value="25">Atlanta</option>
+												<option value="11">Austin</option>
+												<option value="17">Boca Raton</option>
+												<option value="27">Boston</option><option value="31">Chicago</option>
+												<option value="1">Dallas/Fort Worth</option>
+												<option value="18">Fort Lauderdale</option>
+												<option value="42">Hoboken/Jersey City</option>
+												<option value="7">Houston</option>
+												<option value="26">Indio/Palm Springs</option>
+												<option value="28">Inland Empire</option>
+												<option value="2">Las Vegas</option>
+												<option value="3">Los Angeles</option>
+												<option value="14">Miami</option>
+												<option value="37">Napa/Sonoma</option>
+												<option value="24">Nashville</option>
+												<option value="10">New York City</option>
+												<option value="9">Orange County</option>
+												<option value="23">Orlando</option>
+												<option value="16">Palm Beach</option>
+												<option value="15">Phoenix/Scottsdale</option>
+												<option value="36">Salt Lake City</option>
+												<option value="13">San Diego</option>
+												<option value="19">San Francisco</option>
+												<option value="35">San Jose</option>
+												<option value="21">Toronto</option>
+												<option value="32">Washington D.C.</option>
+											</select>
+
+											<!--<input type="text" name="location" placeholder="Enter City" class="city_cls" id="city_cls" >
+											 <div class="no-city"><a href="#no-city">If your city is not listed here, please click this</a></div>-->
+										</div>
+
+										<div class="col-lg-3 tight">
+											<input type="hidden" name="date" id="data_date" placeholder="Date" style="border-radius: 0">
+											<input type="text" id="date" class="datepicker form-control special hidden-xs hasDatepicker" placeholder="Date" required="" style="border-radius: 0" aria-required="true">
+										</div>
+
+										<div class="col-lg-3 tight" id="time_container">
+											<input type="text" name="time" id="time" class="time ui-timepicker-input form-control special last hidden-xs" style="border-radius: 0" placeholder="Time" required="" autocomplete="off" aria-required="true">
+										</div>
+
+										<div class="col-lg-3 tight">
+											<div class="input-group-btn">
+												<button class="btn btn-primary btn-block">Book an Appointment</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Banner Section End -->
+       
+		<!-- Sponser Section Start -->
+		<section class="sponser">
+			<div class="container">
+				<div class="row">
+					<img src="img/logo-bar-desktop.jpg" class="img-fluid" alt="">
+				</div>
+			</div>
+		</section>
+		<!-- Sponser Section End -->
+		
+		<!-- Feature Section Start -->
+		
+		<section class="feature">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h2>Hair and Makeup for Any Occasion</h2>
+					</div>
+					<div class="col-lg-4">
+						<img src="img/indiv2.jpg" class="img-fluid" alt="features">
+						<h3>Individuals</h3>
+						<P>Full makeup and hair styling in the comfort
+							of your home, office or hotel.
+						</P>
+						<div class="col-lg-12">
+							<a class="btn btn-primary books">Book Now</a>
+							<a class="btn btn-default links">Learn More</a>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<img src="img/unnamed-2.jpg" class="img-fluid" alt="features">
+						<h3>Groups</h3>
+						<P>Perfect for a night out on the town,
+							corporate events or photo shoots.
+						</P>
+						<div class="col-lg-12">
+							<a class="btn btn-primary books">Book Now</a>
+							<a class="btn btn-default links">Learn More</a>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<img src="img/unnamed-3.jpg" class="img-fluid" alt="features">
+						<h3>Weddings</h3>
+						<P>Full service appointments for weddings,
+							rehearsals, bridal showers and engagements.
+						</P>
+						<div class="col-lg-12">
+							<a class="btn btn-primary books">Book Now</a>
+							<a class="btn btn-default links">Learn More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Feature Section End -->
+		
+		
+		<!-- Testimonials Section Start -->
+		
+		<section class="testimonials">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h2>Our Clients <i class="fas fa-heart"></i> beGlammed</h2>
+					</div>
+					<div class="col-lg-4">
+						<img src="img/Allie-Long2.jpg" class="img-fluid" alt="testimonials">
+						<blockquote>
+							“My bridesmaids and I felt so pampered and beautiful. beGlammed takes home the gold for on-demand hair and makeup services.” 
+						</blockquote>
+						<small>
+							USWNT soccer player and Olympic athlete <br />
+							Allie Long,
+						</small>
+						<em>
+							Miami, FL
+						</em>
+					</div>
+					<div class="col-lg-4">
+						<img src="img/testimonial-headshot-1-1.jpg" class="img-fluid" alt="testimonials">
+						<blockquote>
+							“One of the amazing beGlammed stylists did my makeup and hair before the Golden Globes viewing party. My stylist, Brittany, and I had a blast creating this 'old hollywood glam' look.” 
+						</blockquote>
+						<small>
+							Ash,
+						</small>
+						<em>
+							Los Angeles, CA
+						</em>
+					</div>
+					<div class="col-lg-4">
+						<img src="img/erica_testimonial_edit.jpg" class="img-fluid" alt="testimonials">
+						<blockquote>
+							“My makeup artist, Valen, was seriously so amazing and such a wealth of information! She shared recommendations for products and gave me helpful mini beauty tutorials.” 
+						</blockquote>
+						<small>
+							Erica,
+						</small>
+						<em>
+							San Diego, CA
+						</em>
+					</div>
+					<div class="col-lg-12">
+						<a href="#" class="more-test">More Testimonials >></a>
+					</div>
+					<div class="col-lg-12">
+						<a class="btn btn-primary books">Book Now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Testimonials Section End -->
+		
+		
+		<!-- FAQ Section Start -->
+		
+		<section class="faq">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h1>Frequently Asked Questions</h1>
+					</div>
+					<div class="col-lg-8">
+						<div class="accordion" id="accordionExample">
+						  	<div class="card">
+								<div class="card-header" id="headingOne">
+								  	<h5 class="mb-0">
+										<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+											I’m late for my appointment. What should I do? 
+										</button>
+								  	</h5>
+								</div>
+								<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+									  <div class="card-body">
+											If you’re running late, don’t worry. We allow a 15 minute grace period for you to arrive. If you are running late, please email us at appointment@beglammed.com so we can contact your hair stylist or makeup artist. If you are more than 15 minutes late, we charge the full amount for your appointment as a no-show fee.
+									  </div>
+								</div>
+						  	</div>
+						  	<div class="card">
+								<div class="card-header" id="headingTwo">
+								  	<h5 class="mb-0">
+										<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+											What is your cancellation policy? 
+										</button>
+								  	</h5>
+								</div>
+								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+									<div class="card-body">
+										At beGlammed, we understand that things come up and you might need to cancel your appointment. = If that happens, please keep in mind our cancellation policy: <br> <br>
+										If you cancel up to four hours before your appointment, there is no charge. If you cancel between one and four hours before your appointment, you will be charged 50% of your total appointment cost. If you cancel less than one hour before your appointment, you will be charged 100% of your total appointment cost. 
+									</div>
+								</div>
+						  	</div>
+							<div class="card">
+								<div class="card-header" id="headingThree">
+								  	<h5 class="mb-0">
+										<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+											How should I prepare for my appointment? 
+										</button>
+								  	</h5>
+								</div>
+								<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+								  	<div class="card-body">
+										For a makeup appointment, please make sure your face is completely clean and free of any makeup or mascara before the makeup artist arrives. <br> <br>
+
+										If your appointment is for a blowout, we recommend your hair is wet before your hairstylist arrives. For updos and downdos your hair should be clean and dry. We recommend washing your hair the night before your appointment to see the best results. 
+								  	</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="headingFour">
+								  	<h5 class="mb-0">
+										<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+											How last minute can I book my appointment?  
+										</button>
+								  	</h5>
+								</div>
+								<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+								  	<div class="card-body">
+										You can book an appointment online or on on the beGlammed app up to three hours before the appointment time. If you need an appointment sooner than three hours please email us directly at appointment@beglammed.com. 
+								  	</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<p>Don't see your question here? <a href="#">More FAQs >></a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- FAQ Section End -->
+		
+		
+		<!-- Apps Section Start -->
+		
+		<section class="apps">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<img src="img/iphone.jpg" class="img-fluid" alt="apps">
+					</div>
+					<div class="col-lg-7">
+						<h2>Download beGlammed <br>
+							for iOS & Android</h2>
+						<div class="col-lg-12">
+							<a href="#"><img src="img/app-store-badge.jpg" class="img-fluid" alt="apps"></a>
+							<a href="#"><img src="img/google-play-badge.jpg" class="img-fluid" alt="apps"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Apps Section End -->
+		
+		
+		<!-- Footer Section Start -->
+		
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<h3>Company</h3>
+						<a href="#">About Us</a><br>
+						<a href="#">Leadership</a><br>
+						<a href="#">Careers</a><br>
+						<a href="#">Testimonials</a><br>
+						<a href="#">Locations</a><br>
+						<a href="#">Press</a><br>
+						<a href="#">Contact Us</a><br>
+					</div>
+					<div class="col-lg-3">
+						<h3>Services</h3>
+						<a href="#">Services</a><br>
+						<a href="#">Weddings</a><br>
+						<a href="#">Groups</a><br>
+						<a href="#">Explore Styles</a><br>
+						<a href="#">FAQ</a><br>
+					</div>
+					<div class="col-lg-3">
+						<h3>Gifts</h3>
+						<a href="#">Gift Cards</a><br>
+						<a href="#">Package</a><br>
+					</div>
+					<div class="col-lg-3">
+						<h3>For Stylists</h3>
+						<a href="#">Apply to be a beGlammed <br>
+									makeup artist or hair stylist</a>
+						<h3>Community</h3>
+						<div class="col-lg-12">
+							<a href="#"><i class="fab fa-facebook-square"></i></a>
+							<a href="#"><i class="fab fa-twitter-square"></i></a>
+							<a href="#"><i class="fab fa-pinterest-square"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer Section End -->
+		
+		<!-- Copyright Section Start -->
+		
+		<section class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+						<a href="#"><img src="img/Logo.png" class="img-fluid" alt="logo"></a>
+					</div>
+					<div class="col-lg-8">
+						<p>© 2018 beGlammed <span><a href="#"> Terms & Conditions</a></span> <span><a href="#">Privacy Policy</a></span></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Copyright Section End -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- jQuery Library File -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap CDN Javascript File -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    </body>
+</html>
