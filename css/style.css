@@ -20,15 +20,30 @@ header{
 }
 
 .navbar-expand-lg .navbar-nav .nav-link{
-	padding: 20px;
+	padding: 5px 20px;
 	font-size: 1em;
 	font-weight: 300;
 	color: #fff;
 }
 
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+	color: #fecb6e;
+}
+
 header .img-fluid{
-	width: 150px;
-	height: 70px;
+	width: 200px;
+	height: 100px;
+}
+
+.navbar-brand{
+	width: 100%;
+	text-align: center;
+	margin: 0px;
+}
+
+.navbar-nav{
+	text-align: center;
+	margin: 5px auto;
 }
 
 /*3.0 Header Section End*/
@@ -147,20 +162,12 @@ header .img-fluid{
 }
 
 .banner .btn-primary{
+	width: 100%;
 	background-color: #772F3C;
     background-image: none;
 	background-image: linear-gradient(to right, #772F3C, #6b202d);
 	border: none;
 	color: #ffffff;
-	background-color: #428bca;
-	border-color: #357ebd;
-}
-
-.banner .btn-block{
-	display: block;
-	width: 100%;
-	padding-left: 0;
-	padding-right: 0;
 }
 
 .banner .btn{
